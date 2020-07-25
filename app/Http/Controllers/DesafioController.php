@@ -105,6 +105,7 @@ class DesafioController extends Controller
                 "invitado_puntaje" => $item->invitado_puntaje,
                 "retador_puntaje" => $item->retador_puntaje,
                 "fecha" => $item->fecha,
+                "fase" => $item->fase,
             );
             array_push($compilado, $xrow);
         }
