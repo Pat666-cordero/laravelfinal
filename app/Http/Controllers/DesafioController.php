@@ -55,7 +55,8 @@ class DesafioController extends Controller
                 "retador" => Equipo::find($item->retador_id),
                 "invitado_puntaje" => $item->invitado_puntaje,
                 "retador_puntaje" => $item->retador_puntaje,
-                "ganador" => $item->ganador,
+                "fecha" => $item->fecha,
+                "fase" => $item->fase,
             );
             array_push($compilado, $xrow);
         }
@@ -103,7 +104,7 @@ class DesafioController extends Controller
                 "retador" => Equipo::find($item->retador_id),
                 "invitado_puntaje" => $item->invitado_puntaje,
                 "retador_puntaje" => $item->retador_puntaje,
-                "ganador" => $item->ganador,
+                "fecha" => $item->fecha,
             );
             array_push($compilado, $xrow);
         }
