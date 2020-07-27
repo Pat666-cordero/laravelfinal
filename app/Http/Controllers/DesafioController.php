@@ -112,7 +112,31 @@ class DesafioController extends Controller
 
         return response()->json(array("status" => true, "objects" => $compilado));
     }
+    //esto
+    /*public function indexByFases(Request $request, $fase)
+    {
+        
+        /*return response()->json(array("status" => true, "objects" => $result));
+        $disc = $disciplina_id;
+        $data = Desafio::where([["visible", "=", true], ["disciplina_id", "=",$disc]])->get();
+        $compilado = array();
+        foreach($data as $item) {
+            $xrow = array(
+                "id" => $item->id,
+                "disciplina" => Disciplina::find($item->disciplina_id),
+                "invitado" => Equipo::find($item->invitado_id),
+                "retador" => Equipo::find($item->retador_id),
+                "invitado_puntaje" => $item->invitado_puntaje,
+                "retador_puntaje" => $item->retador_puntaje,
+                "fecha" => $item->fecha,
+                "fase" => $item->fase,
+            );
+            array_push($compilado, $xrow);
+        }
 
+        return response()->json(array("status" => true, "objects" => $compilado));
+    }*/
+    //esto
     /**
      * Show the form for creating a new resource.
      *

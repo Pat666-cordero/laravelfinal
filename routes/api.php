@@ -43,6 +43,9 @@ Route::group([
     Route::get('personas/android', 'PersonaController@index_android');
     Route::apiResource('personas', 'PersonaController');
     Route::get('desafios/indexByDisciplina/{disciplina_id}', 'DesafioController@indexByDisciplina');
+    //esto
+    //Route::get('desafios/indexByFases/{disciplina_id}', 'DesafioController@indexByFases');
+    //
     Route::apiResource('desafios', 'DesafioController');
     Route::apiResource('carreras', 'CarreraController');
     Route::apiResource('seccionperiodos', 'SeccionperiodoController');
